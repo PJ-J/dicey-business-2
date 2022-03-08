@@ -12,6 +12,25 @@ class Die {
     dieDiv.textContent = this.value;
     diceHolder.appendChild(dieDiv);
     dieCounter++;
+    dieDiv.addEventListener("click", (e) => {
+      diceArr[e.target.id].roll();
+      document.getElementById(e.target.id).textContent = diceArr[e.target.id].value;      
+    });
+    dieDiv.addEventListener("dblclick", (e) => {
+      let val = diceArr[e.target.id].value;
+      diceArr.splice(
+        diceArr.findIndex((item) => item.value == val),
+        1
+      );
+      let remove = document.getElementById(e.target.id);
+      remove.remove();
+  
+      for (let z = 0; z < diceArr.length; z++) {
+        diceArr[z].id = z;
+        document.getElementsByClassName("die")[z].id = z;
+      }
+      dieCounter = diceArr.length;
+    });
   }
 
   roll() {
@@ -29,6 +48,7 @@ document.getElementById("rollDice").addEventListener("click", () => {
     diceArr[i].roll();
     document.getElementById(i).textContent = diceArr[i].value;
   }
+  console.log(diceArr);
 });
 
 document.getElementById("sumDice").addEventListener("click", function () {
