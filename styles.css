@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 10px;
   background-color: beige;
   border: 1px solid black;
@@ -19,7 +20,9 @@ body {
 }
 
 .btn {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: beige;
+  border: 1px solid black;
 }
 
 #diceHolder {
