@@ -19,14 +19,12 @@ class Die {
   }
 }
 
-let addDie = document.getElementById("addDie");
-addDie.addEventListener("click", () => {
+document.getElementById("addDie").addEventListener("click", () => {
   let d1 = new Die();
   diceArr.push(d1);
 });
 
-let rollDice = document.getElementById("rollDice");
-rollDice.addEventListener("click", () => {
+document.getElementById("rollDice").addEventListener("click", () => {
   for (let i = 0; i < diceArr.length; i++) {
     diceArr[i].roll();
     document.getElementById(i).textContent = diceArr[i].value;
