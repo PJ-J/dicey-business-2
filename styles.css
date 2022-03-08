@@ -1,0 +1,32 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.die {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: beige;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0;
+  
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.btn {
+  background-color: beige;
+}
+
+#diceHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#btnHolder {
+  margin-top: 10px;
+}
