@@ -31,13 +31,12 @@ class Die {
         diceArr.findIndex((item) => item.value == val),
         1
       );
-      // remove the div from DOM 
+      // remove the div from DOM
       let remove = document.getElementById(e.target.id);
       remove.remove();
-      
-      // relabel the id in the array and on the DOM object
+
+      // relabel the id on the DOM object
       for (let z = 0; z < diceArr.length; z++) {
-        diceArr[z].id = z;
         document.getElementsByClassName("die")[z].id = z;
       }
       // set counter to length of array so that it doesn't skip numbers when items are removed
