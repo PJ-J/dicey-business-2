@@ -1,0 +1,22 @@
+{
+  "name": "ts-convert-dicey",
+  "version": "1.0.0",
+  "description": "Dicey Business",
+  "main": "app.js",
+  "scripts": {
+    "pizza": "tsc app.ts -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PJ-J/dicey-business-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PJ-J/dicey-business-2/issues"
+  },
+  "homepage": "https://github.com/PJ-J/dicey-business-2#readme",
+  "dependencies": {
+    "typescript": "^4.6.2"
+  }
+}
